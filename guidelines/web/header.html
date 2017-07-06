@@ -1,0 +1,141 @@
+---
+layout: default
+title: StartBox Brand
+slug: iframe
+---
+<body id="header_components" class="iframe web_page">
+  <div class="main_wrapper">
+    <div id="content" class="pad-top-40 pad-bottom-40">
+      <div class="pad-top-20 pad-bottom-20 hero">
+        <h1 class="fs-1">
+          Header
+        </h1>
+        <div class="background_hero"></div>
+      </div>
+
+      <div class="iframe_content">
+        <h2>Header Example</h2>
+        <div class="mdlive-header box_shadow_light">
+          <div class="container">
+            <a href="#" class="mdlive-logo"><img src="{{site.baseurl}}/img/PC_logo-2015-solo.svg"></a>
+
+            <ul class="menu">
+              <li><a href="#" class="menu_patients"><img src="{{site.baseurl}}/img/icon-patients.svg" class="svg"> Patients</a></li>
+              <li><a href="#" class="menu_providers"><img src="{{site.baseurl}}/img/icon-providers.svg" class="svg"> Providers</a></li>
+              <li><a href="#" class="menu_organizations"><img src="{{site.baseurl}}/img/icon-organizations.svg" class="svg"> Organizations</a></li>
+              <li><span>|</span></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">SIGN IN</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear pad-bottom-40"></div>
+{% highlight html %}
+<div class="mdlive-header box_shadow_light">
+  <div class="container">
+    <a href="#" class="mdlive-logo"><img src="{{site.baseurl}}/img/mdlive.svg"></a>
+    <ul class="menu">
+      <li><a href="#" class="menu_patients"><img src="{{site.baseurl}}/img/icon-patients.svg" class="svg"> Patients</a></li>
+      <li><a href="#" class="menu_providers"><img src="{{site.baseurl}}/img/icon-providers.svg" class="svg"> Providers</a></li>
+      <li><a href="#" class="menu_organizations"><img src="{{site.baseurl}}/img/icon-organizations.svg" class="svg"> Organizations</a></li>
+      <li><span>|</span></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">COMPANY</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#">SIGN IN</a></li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}
+
+
+<h2>Header with Nav</h2>
+        <div class="mdlive-header box_shadow_light">
+          <div class="container head_nav">
+            <a href="#" class="mdlive-logo"><img src="{{site.baseurl}}/img/PC_logo-2015-solo.svg"></a>
+
+            <ul class="menu">
+              <li><a href="#" class="menu_patients"><img src="{{site.baseurl}}/img/icon-patients.svg" class="svg"> Patients</a></li>
+              <li><a href="#" class="menu_providers"><img src="{{site.baseurl}}/img/icon-providers.svg" class="svg"> Providers</a></li>
+              <li><a href="#" class="menu_organizations"><img src="{{site.baseurl}}/img/icon-organizations.svg" class="svg"> Organizations</a></li>
+              <li><span>|</span></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">SIGN IN</a></li>
+            </ul>
+          </div>
+
+          <menu class="main_nav">
+            <ul class="container">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li class="dropdown open">
+                <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">See a Doctor <span class="caret"></span></a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">See a Therapist</a></li>
+              <li><a href="#">Our Providers </a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Get Started</a></li>
+            </ul>
+          </menu>
+        </div>
+        <div class="mdlive-hero">
+          <img src="{{site.baseurl}}/img/mdlive-hero.jpg"> 
+        </div>
+        <div class="clear pad-bottom-40"></div>
+{% highlight html %}
+<div class="mdlive-header box_shadow_light">
+  <div class="container head_nav">
+    <a href="#" class="mdlive-logo"><img src="{{site.baseurl}}/img/mdlive.svg"></a>
+
+    <ul class="menu">
+      <li><a href="#" class="menu_patients"><img src="{{site.baseurl}}/img/icon-patients.svg" class="svg"> Patients</a></li>
+      <li><a href="#" class="menu_providers"><img src="{{site.baseurl}}/img/icon-providers.svg" class="svg"> Providers</a></li>
+      <li><a href="#" class="menu_organizations"><img src="{{site.baseurl}}/img/icon-organizations.svg" class="svg"> Organizations</a></li>
+      <li><span>|</span></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">COMPANY</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#">SIGN IN</a></li>
+    </ul>
+  </div>
+
+  <menu class="main_nav">
+    <ul class="container">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">How It Works</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">See a Doctor <span class="caret"></span></a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li><a href="#">See a Therapist</a></li>
+      <li><a href="#">Our Providers </a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Get Started</a></li>
+    </ul>
+  </menu>
+</div>
+{% endhighlight %}
+      </div>
+      <hr class="separator_section">
+    </div>
+  </div>
+

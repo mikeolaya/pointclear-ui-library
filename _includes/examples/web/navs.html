@@ -1,0 +1,164 @@
+<div class="bs-docs-section">
+  <h1 id="nav" class="page-header">Navs</h1>
+
+  <h2 id="nav-tabs">Tabs</h2>
+  <p>Note the <code>.nav-tabs</code> class requires the <code>.nav</code> base class.</p>
+  <div class="bs-example" data-example-id="simple-nav-tabs">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+{% endhighlight %}
+
+
+  <h2 id="nav-pills">Pills</h2>
+  <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+  <div class="bs-example" data-example-id="simple-nav-pills">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+{% endhighlight %}
+  <p>Pills are also vertically stackable. Just add <code>.nav-stacked</code>.</p>
+  <div class="bs-example" data-example-id="simple-nav-stacked">
+    <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-pills nav-stacked">
+  ...
+</ul>
+{% endhighlight %}
+
+
+  <h2 id="nav-justified">Justified</h2>
+
+  <div class="bs-example" data-example-id="simple-nav-justified">
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <br>
+    <ul class="nav nav-pills nav-justified">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-tabs nav-justified">
+  ...
+</ul>
+<ul class="nav nav-pills nav-justified">
+  ...
+</ul>
+{% endhighlight %}
+
+
+  <h2 id="nav-disabled-links">Disabled links</h2>
+  <div class="bs-example" data-example-id="disabled-nav-link">
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="#">Clickable link</a></li>
+      <li role="presentation"><a href="#">Clickable link</a></li>
+      <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-pills">
+  ...
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  ...
+</ul>
+{% endhighlight %}
+
+
+  <h2 id="nav-dropdowns">Using dropdowns</h2>
+
+  <h3>Tabs with dropdowns</h3>
+  <div class="bs-example" data-example-id="nav-tabs-with-dropdown">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Help</a></li>
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-tabs">
+  ...
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      ...
+    </ul>
+  </li>
+  ...
+</ul>
+{% endhighlight %}
+
+  <h3>Pills with dropdowns</h3>
+  <div class="bs-example" data-example-id="nav-pills-with-dropdown">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Help</a></li>
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /example -->
+{% highlight html %}
+<ul class="nav nav-pills">
+  ...
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      ...
+    </ul>
+  </li>
+  ...
+</ul>
+{% endhighlight %}
+</div>

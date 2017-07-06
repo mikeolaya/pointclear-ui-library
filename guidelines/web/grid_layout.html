@@ -1,0 +1,72 @@
+---
+layout: default
+title: Grid Layout
+slug: iframe
+---
+<body id="grid_layout" class="iframe web_page">
+  <div class="main_wrapper">
+    <div id="content" class="pad-top-40 pad-bottom-40">
+      <div class="pad-top-20 pad-bottom-20 hero">
+        <h1 class="fs-1">
+          Grid Layout
+        </h1>
+        <p class="lead col-8-l col-10 no-float no-padding">
+          A mobile-first, 12 column grid built for all devices big and small. The syntax is simple and it works on all major browsers including Chrome, Safari, Firefox and Internet Explorer 8+.
+        </p>
+        <div class="background_hero"></div>
+      </div>
+
+      <div class="iframe_content">
+        <h3>Containers</h3>
+        <p>There are 2 types of containers: </p>
+        <ul>
+          <li>
+            <code>.container</code> - has a set width, is center aligned and applies a 15px gutter padding (left and right)
+          </li>
+          <li>
+            <code>.container-full</code> - has a set width, is center aligned and has no gutter padding (left and right)
+          </li>
+        </ul>
+      </div>
+
+      <hr class="separator_section">
+
+      <div class="iframe_content">
+        <h3>Columns</h3>
+        <p>A list of all available columns for each viewport are as follows:</p>
+        {% include examples/web/grid_columns.html %}
+      </div>
+      
+      <hr class="separator_section">
+
+      <div class="iframe_content">
+        <h3>Mobile-First Grid Example</h3>
+        {% include examples/web/grid_mobile_example.html %}
+      </div>
+      
+      <hr class="separator_section">
+
+      <div class="iframe_content">
+        <h3>Mixed Grid Example</h3>
+        {% include examples/web/grid_mixed_example.html %}
+      </div>
+      
+      <hr class="separator_section">
+
+      <div class="iframe_content">
+        <h3>Grid Offsets</h3>
+        <p>The grid also includes offsets for pushing and pulling columns into place.</p>
+        <p>A list of all available offsets for each viewport are as follows:</p>
+        {% include examples/web/grid_offsets_example.html %}
+      </div>
+      
+      <hr class="separator_section">
+
+      <div class="iframe_content">
+        <h3>Mixed Offset Example</h3>
+        {% include examples/web/grid_mixed_offsets_example.html %}
+      </div>
+      
+      <hr class="separator_section">
+    </div>
+  </div>

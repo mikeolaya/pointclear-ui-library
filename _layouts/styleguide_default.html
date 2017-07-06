@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="main_window">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Design Library</title>
+  {% include global_head.html %}
+	</head>
+	<body class="page">
+	<div class="page_wrapper">
+    {% include header.html %}
+    {% include sidebar.html %}
+
+		{{content}}
+	</div>
+	{% include global_scripts.html %}
+
+	</body>
+</html>

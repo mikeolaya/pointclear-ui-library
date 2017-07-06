@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="44px" viewBox="0 0 34 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Medications</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,9.99884334 C0,7.2380584 2.23083496,5 4.99854806,5 L29.0014519,5 C31.7620738,5 34,7.23688538 34,9.99884334 L34,39.0011567 C34,41.7619416 31.769165,44 29.0014519,44 L4.99854806,44 C2.2379262,44 0,41.7631146 0,39.0011567 L0,9.99884334 Z M2,1 C2,0.44771525 2.44736519,0 2.99815369,0 L31.0018463,0 C31.5531114,0 32,0.443864822 32,1 C32,1.55228475 31.5526348,2 31.0018463,2 L2.99815369,2 C2.44688863,2 2,1.55613518 2,1 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="44" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M21,20 L21,15.9933977 C21,15.4449463 20.5536144,15 20.0029699,15 L13.9970301,15 C13.4530363,15 13,15.4447593 13,15.9933977 L13,20 L8.99339768,20 C8.44494629,20 8,20.4463856 8,20.9970301 L8,27.0029699 C8,27.5469637 8.44475929,28 8.99339768,28 L13,28 L13,32.0066023 C13,32.5550537 13.4463856,33 13.9970301,33 L20.0029699,33 C20.5469637,33 21,32.5552407 21,32.0066023 L21,28 L25.0066023,28 C25.5550537,28 26,27.5536144 26,27.0029699 L26,20.9970301 C26,20.4530363 25.5552407,20 25.0066023,20 L21,20 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="ALL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blue" transform="translate(-224.000000, -332.000000)" stroke="#45B89C" stroke-width="4">
+            <g id="Medications" transform="translate(224.000000, 332.000000)">
+                <use id="Combined-Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                <use id="Combined-Shape" mask="url(#mask-4)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

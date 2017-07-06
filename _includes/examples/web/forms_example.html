@@ -1,0 +1,248 @@
+
+  <h2 id="forms-example">Basic example</h2>
+  <div class="bs-example bg_orange_white" data-example-id="basic-forms">
+    <form>
+      <div class="form-group">
+        <label for="textExample">Patient <i>Some Information</i></label>
+        <input type="text" class="form-control" id="textExample">
+      </div>
+    </form>
+  </div><!-- /example -->
+{% highlight html %}
+<form>
+  <div class="form-group">
+    <label for="textExample">Patient <i>Some Information</i></label>
+    <input type="text" class="form-control" id="textExample">
+  </div>
+</form>
+{% endhighlight %}
+  <div class="bs-example bg_orange_white" data-example-id="basic-forms">
+    <form>
+      <h3>Reset Password</h3>
+      <div class="form-group">
+        <label for="exampleInputEmail1">New Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Confirm New Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" value="Password">
+      </div>
+      <button type="submit" class="btn btn-default">Continue</button>
+    </form>
+  </div><!-- /example -->
+{% highlight html %}
+<form>
+  <div class="form-group">
+    <h2>Reset Password</h2>
+    <label for="exampleInputEmail1">New Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm New Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" value="Password">
+  </div>
+  <button type="submit" class="btn btn-terciary">Continue</button>
+</form>
+{% endhighlight %}
+
+  <h3>Input with feedbacks</h3>
+  <div class="bs-example bg_orange_white" data-example-id="form-validation-states-with-icons">
+    <form>
+      <div class="form-group has-feedback">
+        <label for="exampleInputEmail1">New Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="Password">
+        <span class="form-control-feedback message red" aria-hidden="true">Weak</span>
+      </div>
+      <div class="form-group has-feedback">
+        <label for="exampleInputEmail1">New Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="Password">
+        <span class="form-control-feedback message purple" aria-hidden="true">Medium</span>
+      </div>
+      <div class="form-group has-feedback">
+        <label for="exampleInputEmail1">New Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="Password">
+        <span class="form-control-feedback message green" aria-hidden="true">Strong</span>
+      </div>
+    </form>
+  </div>
+{% highlight html %}
+<form>
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess2">Input with success</label>
+    <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputSuccess2Status" class="sr-only">(success)</span>
+  </div>
+</form>
+{% endhighlight %}
+
+  <h3>Checkboxes and radios</h3>
+  <div class="bs-example bg_orange_white" data-example-id="block-checkboxes-radios">
+    <form>
+      <div class="checkbox">
+        <input id="check1" type="checkbox" name="check-example" value="check1" checked>
+        <label for="check1">Checkbox 1 (pre-checked)</label>
+        <br>
+        <input id="check2" type="checkbox" name="check-example" value="check2">
+        <label for="check2">Checkbox 2</label>
+        <br>
+        <input id="check3" type="checkbox" name="check-example" value="check3" disabled>
+        <label for="check3" class="disabled">Checkbox 3 (disabled)</label>
+      </div>
+
+      <div class="radio">
+        <input id="male" type="radio" name="radio-example" value="radio1" checked>
+        <label for="male">Radio 1 (pre-checked)</label>
+        <br>
+        <input id="female" type="radio" name="radio-example" value="radio2">
+        <label for="female">Radio 2</label>
+        <br>
+        <input id="disabled-example" type="radio" name="radio-example" value="radio3" disabled>
+        <label for="disabled-example" class="disabled">Radio 3 (disabled)</label>
+      </div>
+
+      <div class="btn-group circle" data-toggle="buttons">
+        <label class="btn btn-default active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes
+        </label>
+        <label class="btn btn-default">
+          <input type="radio" name="options" id="option2" autocomplete="off"> No
+        </label>
+      </div>
+
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<form>
+  <div class="checkbox">
+    <input id="check1" type="checkbox" name="check-example" value="check1" checked>
+    <label for="check1">Checkbox 1 (pre-checked)</label>
+    <br>
+    <input id="check2" type="checkbox" name="check-example" value="check2">
+    <label for="check2">Checkbox 2</label>
+    <br>
+    <input id="check3" type="checkbox" name="check-example" value="check3" disabled>
+    <label for="check3" class="disabled">Checkbox 3 (disabled)</label>
+  </div>
+
+  <div class="radio">
+    <input id="male" type="radio" name="radio-example" value="radio1" checked>
+    <label for="male">Radio 1 (pre-checked)</label>
+    <input id="female" type="radio" name="radio-example" value="radio2">
+    <label for="female">Radio 2</label>
+
+    <input id="disabled-example" type="radio" name="radio-example" value="radio3" disabled>
+    <label for="disabled-example" class="disabled">Radio 3 (disabled)</label>
+  </div>
+</form>
+{% endhighlight %}
+
+  <h3>Selects</h3>
+  <div class="bs-example bg_orange_white" data-example-ids="select-form-control">
+    <form>
+      <select name="info" class="custom_select">
+        <option value="0">Select Patient</option>
+        <option value="1">Michelle Marino</option>
+        <option value="2">Mike Marino</option>
+      </select>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<select class="custom_select">
+  <option value="0">Select Patient</option>
+  <option value="1">Michelle Marino</option>
+  <option value="2">Mike Marino</option>
+</select>
+{% endhighlight %}
+
+
+
+
+  <h2 id="forms-control-disabled">Disabled state</h2>
+  <div class="bs-example bg_orange_white" data-example-id="text-form-control-disabled">
+    <form>
+      <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+{% endhighlight %}
+
+  <h3 id="forms-disabled-fieldsets">Disabled fieldsets</h3>
+ 
+  <div class="bs-example bg_orange_white" data-example-id="disabled-fieldset">
+    <form>
+      <fieldset disabled>
+        <div class="form-group">
+          <label for="disabledTextInput">Disabled input</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+        <div class="form-group">
+          <label for="disabledSelect">Disabled select menu</label>
+          <select id="disabledSelect" class="form-control custom_select">
+            <option>Disabled select</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Can't check this
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+{% endhighlight %}
+
+  <h3>Column sizing</h3>
+  
+  <div class="bs-example bg_orange_white" data-example-id="form-control-column-sizing">
+    <form>
+      <div class="row">
+        <div class="col-xs-2">
+          <input type="text" class="form-control" placeholder=".col-xs-2">
+        </div>
+        <div class="col-xs-3">
+          <input type="text" class="form-control" placeholder=".col-xs-3">
+        </div>
+        <div class="col-xs-4">
+          <input type="text" class="form-control" placeholder=".col-xs-4">
+        </div>
+      </div>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<div class="row">
+  <div class="col-xs-2">
+    <input type="text" class="form-control" placeholder=".col-xs-2">
+  </div>
+  <div class="col-xs-3">
+    <input type="text" class="form-control" placeholder=".col-xs-3">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" placeholder=".col-xs-4">
+  </div>
+</div>
+{% endhighlight %}
+

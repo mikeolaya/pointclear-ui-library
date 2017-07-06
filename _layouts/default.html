@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pointclear Design Library</title>
+  {% include global_head.html %}
+	</head>
+	{{content}}
+	
+	{% include global_scripts.html %}
+
+	{% if page.slug == "iframe" %}
+		{% include iframe_footer.html %}
+		{% include iframe_scripts.html %}
+	{% endif %}
+
+	{% if page.slug == "photography" %}
+		{% include iframe_footer.html %}
+		{% include iframe_scripts.html %}
+
+		<link href="{{site.baseurl}}/js/plugins/twentytwenty/twentytwenty.css" rel="stylesheet" type="text/css" />
+		<script src="{{site.baseurl}}/js/plugins/twentytwenty/jquery.event.move.js"></script>
+		<script src="{{site.baseurl}}/js/plugins/twentytwenty/jquery.twentytwenty.js"></script>
+
+		<script type="text/javascript">
+		  $(window).load(function(){
+		    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+		  });
+		</script>
+	{% endif %}
+	
+	</body>
+</html>

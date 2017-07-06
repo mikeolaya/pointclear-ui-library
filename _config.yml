@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /pointclear-ui-library
+exlude: ['README.md']
